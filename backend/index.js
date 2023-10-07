@@ -118,7 +118,6 @@ app.delete("/wocomerce/products/:productId",(req, res)=> {
 
 
 
-// Ruta para actualizar stock
 // Ruta para actualizar un producto específico por su ID
 app.put('/wocomerce/products/:productId', (req, res) => {
     const productId = req.params.productId; // Obtén el ID del producto desde la URL
@@ -129,13 +128,39 @@ app.put('/wocomerce/products/:productId', (req, res) => {
       .then((response) => {
         // Maneja la respuesta de la API aquí
         res.json(response.data);
+        console.log(response.data.id)
       })
       .catch((error) => {
         // Maneja los errores aquí
         console.error('Error al actualizar el producto:', error);
         res.status(500).json({ error: 'Error al actualizar el producto' });
       });
+});
+
+
+
+
+  
+  
+  //crear un nuevo producto
+
+  app.post('/woocommerce/products', (req, res) => {
+    const newProductData = req.body; // Datos del nuevo producto enviados en el cuerpo de la solicitud
+    
+    // Utiliza la instancia de WooCommerce para hacer una solicitud POST a la API de WooCommerce
+    WooCommerce.post('products', newProductData)
+      .then((response) => {
+        // Maneja la respuesta de la API aquí
+        res.status(201).json(response.data); // Devuelve el producto creado con el código de estado 201 (Created)
+        console.log('Producto creado con éxito. ID:', response.data.id);
+      })
+      .catch((error) => {
+        // Maneja los errores aquí
+        console.error('Error al crear el producto:', error);
+        res.status(500).json({ error: 'Error al crear el producto' });
+      });
   });
+
 
 
 /*

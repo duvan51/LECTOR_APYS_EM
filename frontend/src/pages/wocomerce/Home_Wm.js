@@ -4,7 +4,7 @@ import Swal from 'sweetalert2'
 import UploadJSONComponent from '../../components/Cargajson'
 import DescargarJson from '../../components/DescargarJson'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExternalLinkAlt, faTrash, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt, faTrash, faPenToSquare, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 
 import { getProducts } from '../../services/api_wocomerce'
@@ -13,17 +13,29 @@ import { getProducts } from '../../services/api_wocomerce'
 
 const Home_Wm = ()=> {
  
-const [data, setData] = useState([]);
+  const [data, setData] = useState([]);
+  const [products, setProducts] = useState([]);
+
 
   const [editingProductId, setEditingProductId] = useState(null);
   const [editedProduct, setEditedProduct] = useState({});
+
+ /* para el buscador */
+ const [busqueda, setBusqueda] =useState("")
+
+
+
+
+
+  
 
 //peticion get para traer todos los datos y pintarlos 
 useEffect(()=>{
   getProducts()
  
   .then((res)=>{
-    setData(res)
+    setProducts(res);
+    setData(res);
   })
   .catch((error)=>{
     console.error('Error al obtener datos de productos:', error);
@@ -104,8 +116,52 @@ const handleCancelClick = () => {
   setEditingProductId(null); // Sale del modo de edición
 };
 
+
+
+//esto es pára la busqueda y filtrado
+
+const handleChange=e=>{
+  setBusqueda(e.target.value);
+  console.log(e.target.value);
+  filtrar(e.target.value)
+}
+
+const filtrar = (terminoBusqueda) => {
+  if (terminoBusqueda === "") {
+    // Si el término de búsqueda está vacío, muestra todos los productos
+    setData(products);
+  } else {
+    // Filtra los productos según el término de búsqueda
+    const resultadosBusqueda = products.filter((elemento) => {
+      return (
+        elemento.id.toString().toLowerCase().includes(terminoBusqueda.toLowerCase()) ||
+        elemento.sku.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
+        // Agrega aquí más lógica de búsqueda si es necesario
+      );
+    });
+    setData(resultadosBusqueda);
+  }
+};
+
+
+
 return (
   <div className="App">
+    <div className='containerInpunt'>
+      <input 
+      className='form-control inputBuscar'
+      value={busqueda}
+      placeholder='busqueda de productos'
+      onChange={handleChange}
+      />
+      <button className='btn btn-success'>
+        <FontAwesomeIcon icon={faSearch} />
+      </button>
+    </div>
+
+
+
+
     <div>
       <a href='http://localhost:3000/wocomerce/update'>update</a>
     </div>

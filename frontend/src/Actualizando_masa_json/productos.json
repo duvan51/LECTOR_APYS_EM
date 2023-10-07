@@ -1168,5 +1168,317 @@
         ]
       }
     ]
+  },
+  {
+    "id": "",
+    "name": "ESTABILIZADOR POWER 2000 1200W",
+    "manage_stock": true,
+    "stock_quantity": "9",
+    "regular_price": "270000",
+    "price": "270000",
+    "sku": "PW2000",
+    "description": "",
+    "categories": [
+      {
+        "id": "550"
+      },
+      {
+        "id": "658"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Power"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "EXTENSION 1X1 PLUG 3.5 A PLUG 3.5 3MTS",
+    "manage_stock": true,
+    "stock_quantity": "0",
+    "regular_price": "18000",
+    "price": "18000",
+    "sku": "RACC240L3",
+    "description": "",
+    "categories": [
+      {
+        "id": "49"
+      },
+      {
+        "id": "398"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "ESTABILIZADOR REGULADOR POWER 3000 MAGOM",
+    "manage_stock": true,
+    "stock_quantity": "1",
+    "regular_price": "165000",
+    "price": "165000",
+    "sku": "PW3000",
+    "description": "",
+    "categories": [
+      {
+        "id": "550"
+      },
+      {
+        "id": "658"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Power"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "ESTABILIZADOR MAGOM 1000VAC 4 SALIDAS",
+    "manage_stock": true,
+    "stock_quantity": "15",
+    "regular_price": "56000",
+    "price": "56000",
+    "sku": "POWER4",
+    "description": "",
+    "categories": [
+      {
+        "id": "550"
+      },
+      {
+        "id": "658"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Magom"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "ESTABILIZADOR MAGOM 1000VAC 8 SALIDAS",
+    "manage_stock": true,
+    "stock_quantity": "0",
+    "regular_price": "62000",
+    "price": "62000",
+    "sku": "POWER8",
+    "description": "",
+    "categories": [
+      {
+        "id": "550"
+      },
+      {
+        "id": "658"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Magom"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "MICROFONO INALAMBRICO BASE Y CUELLO FLEXIBLE",
+    "manage_stock": true,
+    "stock_quantity": "5",
+    "regular_price": "290000",
+    "price": "290000",
+    "sku": "MS208W",
+    "description": "",
+    "categories": [
+      {
+        "id": "655"
+      },
+      {
+        "id": "87"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "INTERCOMUNICADOR DE VENTANILLA",
+    "manage_stock": true,
+    "stock_quantity": "0",
+    "regular_price": "400000",
+    "price": "400000",
+    "sku": "DA239",
+    "description": "",
+    "categories": [
+      {
+        "id": "655"
+      },
+      {
+        "id": "87"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Takstar"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "INTERCOMUNICADOR DE VENTANILLA",
+    "manage_stock": true,
+    "stock_quantity": "0",
+    "regular_price": "340000",
+    "price": "340000",
+    "sku": "DA237",
+    "description": "",
+    "categories": [
+      {
+        "id": "655"
+      },
+      {
+        "id": "87"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Takstar"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "SISTEMA INALAMBRICO UHF DIADEMA",
+    "manage_stock": true,
+    "stock_quantity": "0",
+    "regular_price": "175000",
+    "price": "175000",
+    "sku": "HM200W",
+    "description": "",
+    "categories": [
+      {
+        "id": "655"
+      },
+      {
+        "id": "87"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Takstar"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "MICROFONO DE MANO TAKSTAR",
+    "manage_stock": true,
+    "stock_quantity": "2",
+    "regular_price": "400000",
+    "price": "400000",
+    "sku": "TS6310HH",
+    "description": "",
+    "categories": [
+      {
+        "id": "655"
+      },
+      {
+        "id": "87"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Takstar"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "CABINA PASIVA 10\" 350W MAXLIN",
+    "manage_stock": true,
+    "stock_quantity": "0",
+    "regular_price": "395000",
+    "price": "395000",
+    "sku": "CABI10P",
+    "description": "",
+    "categories": [
+      {
+        "id": "655"
+      },
+      {
+        "id": "68"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Maxline"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "CABINA ACTIVA 15\" MICROFONO + BASE (FM-BT-USB)",
+    "manage_stock": true,
+    "stock_quantity": "2",
+    "regular_price": "1050000",
+    "price": "1050000",
+    "sku": "PP2115CB-AUES",
+    "description": "",
+    "categories": [
+      {
+        "id": "655"
+      },
+      {
+        "id": "68"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Alquimia"
+        ]
+      }
+    ]
   }
 ]
