@@ -1,3 +1,11 @@
+###esto es directamente a la api de wocomerce
+@credenciales = ?consumer_key=ck_2d6ca7eb9664b2b7df3d845c6a7bbb75bf1c99a0&consumer_secret=cs_052e1a6f0dee86422c076405e5e03f72c1721b18&version=wc/v3
+@apiProducts = https://wwww.electromusicaldelllano.com/wp-json/wc/v3/products
+@producto = 2536
 
+PUT {{apiProducts}}/{{producto}}{{credenciales}}
+Content-Type: application/json
 
-
+{
+    "sku":"pl410"
+}

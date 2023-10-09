@@ -17,12 +17,15 @@ const { type } = require('os');
 app.use(cors());
 //wocomerce get products
 
+/* 
+https://tu-sitio.com/wp-json/wc/v3/products
+*/
 
 
 // Configuración de la API de WooCommerce
 const WooCommerceRestApi = require("@woocommerce/woocommerce-rest-api").default;
 const WooCommerce = new WooCommerceRestApi({
-  url: 'https://electromusicaldelllano.com/', // Reemplaza con la URL de tu tienda WooCommerce
+  url: 'https://electromusicaldelllano.com', // Reemplaza con la URL de tu tienda WooCommerce
   consumerKey: process.env.consumer_key, // Reemplaza con tu clave de consumidor
   consumerSecret: process.env.consumer_secret, // Reemplaza con tu secreto de consumidor
   version: 'wc/v3' // Versión de la API de WooCommerce que deseas utilizar
@@ -92,6 +95,7 @@ app.get('/wocomerce/products/:productId', (req, res) => {
      .then((response) => {
         // Envía los detalles del producto como respuesta
         res.json(response.data);
+        console.log("id: ", response.data.id, " -- ","sku: ",response.data.sku )
       })
       .catch((error) => {
         console.error('Error al obtener detalles del producto:', error);
@@ -128,7 +132,7 @@ app.put('/wocomerce/products/:productId', (req, res) => {
       .then((response) => {
         // Maneja la respuesta de la API aquí
         res.json(response.data);
-        console.log(response.data.id)
+        console.log("id: ", response.data.id, " -- ","sku: ",response.data.sku )
       })
       .catch((error) => {
         // Maneja los errores aquí
@@ -199,10 +203,9 @@ async function actualizarProductos() {
 
 // Llama a la función para iniciar la actualización
 actualizarProductos();
-*/
 
 //----- end actualizar en masa------//
-
+*/
 
 
 /*

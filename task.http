@@ -4,15 +4,13 @@ PUT {{apiProducts}}/2536
 Content-Type: application/json
 
 {
-    "sku": "PL410",
-    "description": "PPPPPPP",
-    "regular_price": 32000,
-    "stock_quantity": 5,
-    "stock": 5,
+  "sku": "pl410"
 }
 
 ###
+
 GET {{apiProducts}}/2536
+
 
 
 ###
